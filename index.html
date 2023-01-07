@@ -4,10 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timed Quiz</title>
+  <link rel="stylesheet" href="./Assets/css/reset.css"/>
+  <link rel="stylesheet" href="./Assets/css/style.css"/>
+  <script src="https://kit.fontawesome.com/e87164d213.js" crossorigin="anonymous"></script>
+  <title>Quiz App</title>
 </head>
 <body>
-  <div id="button"></div>
+  
+  <div style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="hud-item flex-row" style="flex-basis: 50%;">
+      <p class="hud-items " id="clock">
+        Timer
+      </p>
+      <h1 class="hud-timer" id="timer">
+        200
+      </h1>
+    </div>
+    <div class="hud-item flex-row" style="flex-basis: 50%;">
+      <p class="hud-pref">
+        Score
+      </p>
+      <h1 class="hud-m-text" id="score">
+        0
+      </h1>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div id="quiestion-container" class="hidden"></div>
+
+    <h2 id="ready" class="flex-row">You Ready ?</h2>
+
+    <div id="question" class="hidden"></div>
+
+    <div id="answer-buttons" class="btn-grid hidden"></div>
+
+    <h2 id="high-score-title" class="flex-row hidden">High Scores</h2>
+    <ul id="high-score" class="hidden"></ul>
+
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hidden">Next</button>
+    </div>
+  </div>
     <script src="./Assets/js/main.js"></script>
 </body>
 </html>

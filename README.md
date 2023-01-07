@@ -1,20 +1,25 @@
-# 04 Web APIs: Code Quiz
+# JavaScript:Quiz
 
-## Your Task
+![The Quiz-App.](./Assets/Quiz-04.png)
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+## Description
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+ A timed coding quiz with multiple-choice questions. Which runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. 
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+## Task
 
-## User Story
+This Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## What I learned
+
+With this project I learned a lot !
+- How to utilize JavaScript's methods on manipulating the dom
+- More about the power of functions
+- The difficulty of thinking Logical for a "noob"
+- Making comments within ones code is valuable for others as well
+- Arrow functions are nice "syntax sugar" but also can be very efficient
+
+
 
 ## Acceptance Criteria
 
@@ -32,68 +37,14 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-## Mock-Up
+## RoadMap
+- Code could be updated to be more efficient 
+- UI could be "cleaner" and more responsive
 
-The following animation demonstrates the application functionality:
+## Sources
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+[https://youtu.be/riDzcEQbX6k](https://youtu.be/riDzcEQbX6k)
 
-## Grading Requirements
+[https://github.com/nucleargriff](https://github.com/nucleargriff)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
