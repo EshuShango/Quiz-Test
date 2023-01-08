@@ -87,7 +87,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 100%;
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
