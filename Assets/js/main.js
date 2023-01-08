@@ -24,9 +24,9 @@ let gameFinished = false;
 let timerInterval;
 
 
-// start game function
+// * start game function
 const startGame = () => {
-  //make func
+  // TODO: could make this into a seperate func
   startBtn.classList.add('hidden');
   readyNow.classList.add('hidden');
 
@@ -44,15 +44,15 @@ const startGame = () => {
 
 startBtn.addEventListener('click', startGame);
 
-
+// *function to end the game
 const endGame = (didTimeOut) => {
   gameFinished = true;
 
   if (didTimeOut) {
     console.log('Times up !')
-  }
-  cleanAnswers()
-  clearInterval(timerInterval)
+  };
+  cleanAnswers();
+  clearInterval(timerInterval);
 
   const initials = prompt("Type your intials to save score") || "unknown";
 
@@ -65,6 +65,9 @@ const endGame = (didTimeOut) => {
   const finalHighScores = localHighScores.concat([yourHighScore]).sort((a, b) => b.score - a.score)
 
   //TODO: try to check if current score is high score and congratulate user
+  // if (yourHighScore > localHighScores) {
+  //   console.log('Congrates You have the highest score');
+  // };
 
   // save new high scores
   localStorage.setItem('scores', JSON.stringify(finalHighScores));
@@ -81,7 +84,7 @@ const endGame = (didTimeOut) => {
 
 }
 
-
+  // * a func that randomly sorts through questions each time the game starts
 const runNextQuestion = () => {
 
   const theQuestion = questionList[currQuestionIdx]
@@ -90,12 +93,12 @@ const runNextQuestion = () => {
 
   questionEl.classList.remove('hidden');
   answersEl.classList.remove('hidden');
-
+  // the piece of code below randomizes the questions 
   theQuestion.answers.sort(() => Math.random() - .5).forEach(makeAnswerOptions)
 
 }
 
-
+// * a func to handle answers - creates them and how to handle them etc
 const makeAnswerOptions = (answer) => {
 
   const theQuestion = questionList[currQuestionIdx]
@@ -118,7 +121,7 @@ const makeAnswerOptions = (answer) => {
       scoreEl.textContent = score;
       btnEl.classList.add('success-btn')
     } else {
-      timerLeft -= 10;
+      timerLeft -= 15;
       timerSecEl.textContent = timerLeft;
       timerSecEl.classList.add('fail')
       setTimeout(() => {
@@ -152,7 +155,7 @@ const makeAnswerOptions = (answer) => {
 
 }
 
-
+// * func to clear answers
 const cleanAnswers = () => {
   while (answersEl.firstChild) {
     answersEl.removeChild(answersEl.firstChild)
@@ -165,7 +168,7 @@ const cleanAnswers = () => {
 
 
 
-// an array with objects, which are questions
+// * an array with objects, which are questions
 const questionList = [
   {
     question: 'Which of the following is a way to create an object in JavaScript?',
@@ -179,7 +182,7 @@ const questionList = [
   },
   {
     question: 'Which of the following is a way to select an element with the ID "my-element" in JavaScript?',
-    answers: ['document.querySelector("#my-element")', 'document.getElementById("my-element")', '#my-element', 'None of the above'],
+    answers: ['document.querySelectorAll("#my-element")', 'document.getElementById("my-element")', '#my-element', 'None of the above'],
     correctAnswer: 'document.getElementById("my-element")'
   },
   {

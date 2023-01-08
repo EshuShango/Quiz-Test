@@ -16,8 +16,10 @@ With this project I learned a lot !
 - How to utilize JavaScript's methods on manipulating the dom
 - More about the power of functions
 - The difficulty of thinking Logical for a "noob"
-- Making comments within ones code is valuable for others as well
+- Making comments within ones code is valuable not only for self, but others as well
 - Arrow functions are nice "syntax sugar" but also can be very efficient
+- It's just gonna take more time to truly understand all of the code, but having some type of understanding and perseverance is a major key when learning
+- It's okay to get "help"
 
 
 
@@ -38,7 +40,8 @@ THEN I can save my initials and my score
 ```
 
 ## RoadMap
-- Code could be updated to be more efficient 
+- Code could be updated to be more efficient
+- Could add a few extra game features
 - UI could be "cleaner" and more responsive
 
 ## Sources
@@ -46,5 +49,7 @@ THEN I can save my initials and my score
 [https://youtu.be/riDzcEQbX6k](https://youtu.be/riDzcEQbX6k)
 
 [https://github.com/nucleargriff](https://github.com/nucleargriff)
+
+[https://chat.openai.com/chat](https://chat.openai.com/chat)
 
 
