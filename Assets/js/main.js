@@ -65,6 +65,7 @@ const endGame = (didTimeOut) => {
   const finalHighScores = localHighScores.concat([yourHighScore]).sort((a, b) => b.score - a.score)
 
   //TODO: try to check if current score is high score and congratulate user
+  
   // if (yourHighScore > localHighScores) {
   //   console.log('Congrates You have the highest score');
   // };
